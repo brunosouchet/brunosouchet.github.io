@@ -1,0 +1,118 @@
+body{font-family: Arial,Sans-Serif;line-height: 1.6;margin:0;padding:0;background-color:#F1F2D5}
+
+.container { width: 90%;  max-width: 1200px;  margin: 0 auto; padding: 1rem;   }
+
+.banniere {width:100%;background-color:#B1F2D5;display:flex;justify-content:center;text-align:center; padding-top: auto; }
+
+.banniere > table {width: 100%;
+            table-layout: fixed; /* Assure que les colonnes ont la même largeur */
+            border-collapse: collapse; /* Supprime les espaces entre les cellules */
+        }
+.banniere > th,td {
+            border: 1px solid black; /* Ajoute une bordure pour mieux voir les cellules */
+            padding: 0.5em; /* Ajoute un peu d'espace à l'intérieur des cellules */
+            text-align: center; /* Centre le texte dans les cellules */
+        }
+
+.acceuil{background-image:url(logo-2-snt.webp); 
+		background-color:green;
+		width: 100%;
+		
+		display: flex;
+		flex-direction: row;
+		align-content: space-between;}
+
+.mon-image {
+  width: 100%; /* Occupe toute la largeur du conteneur */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  display: block; /* Évite les espaces indésirables sous l'image */
+}
+
+hr.separator { height: 3px;  background-color: rgb(177, 10, 177);   border: none;}
+
+.content {font-size:25 pt;padding-top:20px; padding-left:40px;padding-right:30px; width: 100%;   height: 100%;}
+
+.disclaimer { text-align: center;font-size:25px; }
+
+.texte {font-size: 20 px;  padding: 35px 35px 0 35px; line-height:1cm;text-align : left;}
+
+.chapters {width: 60%; height: 100vh;line-height:30px;margin: 0 0 0 25px; font-size:30px;}
+
+.chapters > .summary {text-align: center;width: 100%;  padding: 10px 0 40px 0;}
+
+.chapters > ol > li {line-height:40px; margin: 25px 5px 5px 0;font-size:30px;}
+
+.chapters > ol > li > a { text-decoration: none;}
+
+#chapter-delimiter {margin: 20 px 0 7px 0;}
+
+.liens { display: flex; flex-direction: row;  align-content: space-around;}
+
+.misc {width: 40%; height: 125vh;line-height:35px; margin: 0 auto 0 5px;padding-top: 35px;font-size:30px;}
+
+.misc > .summary {text-align: center; width: 100%; padding: 10px 0 40px 0;}
+
+.misc > ol > li {line-height:30px;margin: 15px 5px 5px 0;font-size:30px;font-weight:normal}
+
+.misc > ol > li > a {text-decoration: none;}
+
+#chapter-delimiter { font-weight: bold;  text-align: center;}
+
+h2{margin-left:20px}
+a{font-size: 20 px;}
+.sommaire{ margin-top:40px;  font-size:40px}
+p{font-size: 20px;	padding-right:80px;	line-height:25px;}
+ol{padding: 10px 0 0 35px ; font-weight:bold;}
+.texte{font-size:22px}
+
+td{border: solid 1px; padding:10px;margin:30 px;}
+tr{border: solid 1px; padding:10px;margin:30px;}
+
+
+li {font-size: 18px;
+    line-height: 1cm;
+}
+ul {margin-left:40px;}
+a {
+    text-decoration: none;
+    color: rgb(7, 101, 177);
+}
+
+p { font-size: 20px;    line-height: 1.2cm;}	
+
+a#return-button {
+    text-align: center;
+    margin: 45px 55px auto 35px;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+a#return-button:active { padding-top: 30px;
+    color: black;
+}
+
+#nav {  list-style: none ;  margin: 0 ;  padding: 0 ;  overflow: hidden ;	/* Création du contexte de formatage */}
+#nav li { float: left ; font-size:40px;   border: 2px solid #600 ;   margin : 30px; margin-left: 50px ;  color: #fff ;  background:#F54927 ;}
+#nav li a {  display: block ; width: auto;   background: #F54927 ;  color: #fff ;  font: 1em "Trebuchet MS",Arial,sans-serif ;
+			padding:30px;
+			text-align: center ;
+			text-decoration: none ;
+}
+#nav li a:hover, #nav li a:focus, #nav li a:active {
+  background: #900 ;
+  text-decoration: underline ;
+}
+@media screen and (max-width: 768px) {body{font-size:18px;}
+             table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+
+            /* Réduire le padding pour gagner de la place */
+            th, td {
+                padding: 5px;
+            }
+        }  
+@media(min-width:768px){body{font-size:18px}}
+@media(min-width:1024px){body{font-size:20px}}
